@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.lesson1.Cashe;
+
 import java.util.Arrays;
 
 import static org.example.lesson2.practice.BubbleSort.sortArray;
@@ -51,7 +53,22 @@ public class Main {
         /**
          * App, которая находит наибольшее из трех введенных чисел.
          */
-        System.out.println(max(5,3,4));;
+        System.out.println(max(5,3,4));
+        System.out.println("--------------------------------------------------------------------------------");
 
+        /**
+         * Универсальный класс Cache
+         */
+        Cashe<Object, Object> cashe = new Cashe<>();
+        cashe.put("int1", 1);
+        cashe.put("string", "Hello job");
+        cashe.put(4.3, 4.3);
+        cashe.put(true, false);
+
+        System.out.println(cashe.get(4.3));
+        System.out.println(cashe.get("int1"));
+        System.out.println(cashe.get("string"));
+        cashe.remove("int1");
+        System.out.println(cashe.get("int1"));
     }
 }
