@@ -1,28 +1,57 @@
 package org.example;
 
-import static java.lang.Double.sum;
+import java.util.Arrays;
+
+import static org.example.lesson2.practice.BubbleSort.sortArray;
 import static org.example.lesson2.practice.Calculator.*;
+import static org.example.lesson2.practice.DivisibleBy3Or5.divide3Or5;
+import static org.example.lesson2.practice.EvenOdd.dividedEvenOrOdd;
+import static org.example.lesson2.practice.Factorial.factorial;
+import static org.example.lesson2.practice.MaxNumber.max;
+import static org.example.lesson2.practice.Reverse.reverse;
 
 public class Main {
     public static void main(String[] args) {
-        // Инкапсуляция это сокрытие данных, модификатор private, ...
-        // Переменная это область памяти данных определенного типа (ячейка в памяти, ссылка куда ссылается, какой тип значения, если инициализирована то в ней уже есть значение)
-        // Что такое оператор присваивания "+" —> оператор служит для определения значения
-        // ЧТо такое определение метода и из каких компонентов состоит (модификатор, возвращаемый тип данных, имя метода (кемел кейз, не начинается с цифры), В скобках аргументы, тело метода)
-        // Что такое static и final (final (класс или переменная) -> наследоваться от класса нельзя, неизменяемый) (static (метод или поле класса)-> доступно везде).
-        // Зачем static –≥ когда не храним состояние, а передаем информацию. (Есть класс генерации тестовых данных, там метод может быть static, без создания экземпляра класса можно вызвать метод)
+        /**
+         * Метод который выводит все числа от 1 до 100 которые делятся на 3 или на 5 без остатка
+         */
+        divide3Or5();
 
-//        dividedThree();
-//        dividedEven(2);
-//        System.out.println(Arrays.toString(sortArray(new int[] {3,4,5,8,1,7})));
-//        System.out.println(factorial(5));
+        /**
+         * Метод который проверяет является ли число четным или нечетным, если нечетная выводит число, если четное то не выводит
+         */
+        dividedEvenOrOdd(2);
 
+        /**
+         * Метод который принимает массив чисел и сортирует их в порядке убывания
+         */
+        System.out.println(Arrays.toString(sortArray(new int[] {3,4,5,8,1,7})));
+
+        /**
+         * Метод который считает факториал числа
+         */
+        System.out.println(factorial(5));
+
+        /** App, которая принимает два числа и
+         * выполняет их сложение, вычитание, умножение и деление.
+         * Используйте методы для выполнения каждой операции.
+         */
         double num1 = 10, num2 = 5;
 
         System.out.println("Сложение: " + sum(num1, num2));
         System.out.println("Вычитание: " + subtract(num1, num2));
         System.out.println("Умножение: " + multiply(num1, num2));
         System.out.println("Деление: " + divide(num1, num2));
+
+        /**
+         * App, которая выводит числа от 10 до 1 в обратном порядке, используя цикл.
+         */
+        reverse();
+
+        /**
+         * App, которая находит наибольшее из трех введенных чисел.
+         */
+        System.out.println(max(5,3,4));;
 
     }
 }
