@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Arrays;
 
-import static org.example.JavaBasicsLesson.*;
+import static org.example.lesson2.JavaBasicTasks.*;
 
 public class Main {
     public static void main(String[] args) {

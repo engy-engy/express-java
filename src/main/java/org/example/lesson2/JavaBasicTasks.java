@@ -1,6 +1,6 @@
-package org.example;
+package org.example.lesson2;
 
-public class JavaBasicsLesson {
+public class JavaBasicTasks {
 
     // Метод который выводит все числа от 1 до 100 которые делятся на 3 или на 5 без остатка
     public static void dividedThree() {
