@@ -1,8 +1,11 @@
 package org.example;
 
 import org.example.lesson1.Cashe;
+import org.example.lesson1.CasheCustom;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.example.lesson2.practice.BubbleSort.sortArray;
 import static org.example.lesson2.practice.Calculator.*;
@@ -10,6 +13,7 @@ import static org.example.lesson2.practice.DivisibleBy3Or5.divide3Or5;
 import static org.example.lesson2.practice.EvenOdd.dividedEvenOrOdd;
 import static org.example.lesson2.practice.Factorial.factorial;
 import static org.example.lesson2.practice.MaxNumber.max;
+import static org.example.lesson2.practice.Palindrome.checkPalindrome;
 import static org.example.lesson2.practice.Reverse.reverse;
 
 public class Main {
@@ -60,9 +64,14 @@ public class Main {
          * Универсальный класс Cache
          */
         Cashe<Object, Object> cashe = new Cashe<>();
+        CasheCustom casheCustom = new CasheCustom();
+        cashe.put(casheCustom, "casheCustom");
+
+        List list = new ArrayList();
+        list.add("ABC");
         cashe.put("int1", 1);
         cashe.put("string", "Hello job");
-        cashe.put(4.3, 4.3);
+        cashe.put(list, 4.3);
         cashe.put(true, false);
 
         System.out.println(cashe.get(4.3));
@@ -70,5 +79,16 @@ public class Main {
         System.out.println(cashe.get("string"));
         cashe.remove("int1");
         System.out.println(cashe.get("int1"));
+        System.out.println(cashe.get(list));
+        System.out.println(cashe.get(casheCustom));
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App, которая проверяет, является ли строка палиндромом.
+         * Палиндром — это строка, которая читается одинаково слева направо и справа налево (например, "level", "madam").
+         */
+        System.out.println("Строка палиндром ? —> " + checkPalindrome("madam"));
+
     }
 }
