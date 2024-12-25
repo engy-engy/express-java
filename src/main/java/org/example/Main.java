@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.example.lesson2.homework.AdditionSubtraction.additionSubtraction;
 import static org.example.lesson2.practice.BubbleSort.sortArray;
 import static org.example.lesson2.practice.Calculator.*;
 import static org.example.lesson2.practice.ContainsDuplicate.containsDuplicate;
@@ -114,6 +115,13 @@ public class Main {
          * Метод который считает факториал числа
          */
         System.out.println("Factorial: " + methodFactorial(5));
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App, которая принимает два числа с консоли, складывает их и выводит разность.
+         */
+        additionSubtraction(15,5);
 
     }
 }
