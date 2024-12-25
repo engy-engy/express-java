@@ -6,8 +6,8 @@ package org.example.lesson2.homework;
  */
 public class ConvertCelsiusToFahrenheit {
 
-    public static double convertCelsiusToFahrenheit(double celsius) {
-        return celsius * 9/5 + 32;
+    public static int convertCelsiusToFahrenheit( double celsius) {
+        return (int) Math.round(celsius * 9/5 + 32);
     }
 
 }

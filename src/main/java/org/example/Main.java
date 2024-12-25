@@ -146,7 +146,7 @@ public class Main {
          * App, которая преобразует температуру из Цельсия в Фаренгейты:
          * Формула: F = C * 9/5 + 32.
          */
-        System.out.println("Температура по Fahrenheit: " + Math.round(convertCelsiusToFahrenheit(25)));
+        System.out.println("Температура по Fahrenheit: " + convertCelsiusToFahrenheit(25));
 
     }
 }
