@@ -13,6 +13,7 @@ import static org.example.lesson2.practice.DivisibleBy3Or5.divide3Or5;
 import static org.example.lesson2.practice.EvenOdd.dividedEvenOrOdd;
 import static org.example.lesson2.practice.Factorial.factorial;
 import static org.example.lesson2.practice.MaxNumber.max;
+import static org.example.lesson2.practice.MaxSubarraySum.maxSubarraySum;
 import static org.example.lesson2.practice.Palindrome.checkPalindrome;
 import static org.example.lesson2.practice.Reverse.reverse;
 
@@ -89,6 +90,14 @@ public class Main {
          * Палиндром — это строка, которая читается одинаково слева направо и справа налево (например, "level", "madam").
          */
         System.out.println("Строка палиндром ? —> " + checkPalindrome("madam"));
+        System.out.println("--------------------------------------------------------------------------------");
+
+        /**
+         * App, которая находит максимальную сумму всех чисел в подмассиве для заданного массива.
+         * Например, для массива {1, -2, 3, 4, -1, 2, 1, -5, 4} максимальная сумма подмассива будет равна 6 (для подмассива {3, 4, -1, 2, 1}).
+         */
+        int[] ar = {1, -2, 3, 4, -1, 2, 1, -5, 4};
+        System.out.println(maxSubarraySum(ar));
 
     }
 }
