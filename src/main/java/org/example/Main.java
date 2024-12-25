@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.example.lesson2.homework.AdditionSubtraction.additionSubtraction;
+import static org.example.lesson2.homework.CalculatorSwitch.calculatorSwitch;
 import static org.example.lesson2.homework.ChangeVariableValue.changeVariableValue;
 import static org.example.lesson2.homework.CheckEvenNumber.checkEvenNumber;
 import static org.example.lesson2.homework.ConvertCelsiusToFahrenheit.convertCelsiusToFahrenheit;
@@ -163,6 +164,13 @@ public class Main {
          * App, которая проверяет, является ли число чётным или нечётным.
          */
         checkEvenNumber(3);
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App с использованием switch, который выполняет операции +, -, *, /, используя switch.
+         */
+        calculatorSwitch();
 
     }
 }
