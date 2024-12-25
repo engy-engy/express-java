@@ -14,6 +14,7 @@ import static org.example.lesson2.homework.CheckEvenNumber.checkEvenNumber;
 import static org.example.lesson2.homework.ConvertCelsiusToFahrenheit.convertCelsiusToFahrenheit;
 import static org.example.lesson2.homework.RemainderDivision.remainderDivision;
 import static org.example.lesson2.homework.SRectangle.sRectangle;
+import static org.example.lesson2.homework.TimeOfYearSwitch.timeOfYearSwitch;
 import static org.example.lesson2.practice.BubbleSort.sortArray;
 import static org.example.lesson2.practice.Calculator.*;
 import static org.example.lesson2.practice.ContainsDuplicate.containsDuplicate;
@@ -171,6 +172,13 @@ public class Main {
          * App с использованием switch, который выполняет операции +, -, *, /, используя switch.
          */
         calculatorSwitch();
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App, пользователь вводит номер месяца (1-12). Выведите название соответствующего времени года, используя switch.
+         */
+        timeOfYearSwitch();
 
     }
 }
