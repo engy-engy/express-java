@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.example.lesson2.homework.AdditionSubtraction.additionSubtraction;
+import static org.example.lesson2.homework.RemainderDivision.remainderDivision;
 import static org.example.lesson2.homework.SRectangle.sRectangle;
 import static org.example.lesson2.practice.BubbleSort.sortArray;
 import static org.example.lesson2.practice.Calculator.*;
@@ -130,6 +131,13 @@ public class Main {
          * App, которая вычисляет площадь прямоугольника, используя введённые с консоли ширину и длину
          */
         System.out.println("Площадь прямоугольника: " + sRectangle(15,5));
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App, которая принимает два числа и выводит результат их деления и остаток от деления.
+         */
+        remainderDivision(30,5);
 
     }
 }
