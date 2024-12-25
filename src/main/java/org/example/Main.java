@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.example.lesson2.homework.AdditionSubtraction.additionSubtraction;
+import static org.example.lesson2.homework.SRectangle.sRectangle;
 import static org.example.lesson2.practice.BubbleSort.sortArray;
 import static org.example.lesson2.practice.Calculator.*;
 import static org.example.lesson2.practice.ContainsDuplicate.containsDuplicate;
@@ -122,6 +123,13 @@ public class Main {
          * App, которая принимает два числа с консоли, складывает их и выводит разность.
          */
         additionSubtraction(15,5);
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App, которая вычисляет площадь прямоугольника, используя введённые с консоли ширину и длину
+         */
+        System.out.println("Площадь прямоугольника: " + sRectangle(15,5));
 
     }
 }
