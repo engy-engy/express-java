@@ -9,6 +9,7 @@ import java.util.List;
 
 import static org.example.lesson2.homework.AdditionSubtraction.additionSubtraction;
 import static org.example.lesson2.homework.ChangeVariableValue.changeVariableValue;
+import static org.example.lesson2.homework.CheckEvenNumber.checkEvenNumber;
 import static org.example.lesson2.homework.ConvertCelsiusToFahrenheit.convertCelsiusToFahrenheit;
 import static org.example.lesson2.homework.RemainderDivision.remainderDivision;
 import static org.example.lesson2.homework.SRectangle.sRectangle;
@@ -155,6 +156,13 @@ public class Main {
          * App, которая меняет значения двух переменных местами без использования третьей переменной.
          */
         changeVariableValue(2,4);
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App, которая проверяет, является ли число чётным или нечётным.
+         */
+        checkEvenNumber(3);
 
     }
 }
