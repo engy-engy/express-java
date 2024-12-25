@@ -13,6 +13,7 @@ import static org.example.lesson2.practice.ContainsDuplicate.containsDuplicate;
 import static org.example.lesson2.practice.DivisibleBy3Or5.divide3Or5;
 import static org.example.lesson2.practice.EvenOdd.dividedEvenOrOdd;
 import static org.example.lesson2.practice.Factorial.factorial;
+import static org.example.lesson2.practice.Factorial.methodFactorial;
 import static org.example.lesson2.practice.MaxNumber.max;
 import static org.example.lesson2.practice.MaxSubarraySum.maxSubarraySum;
 import static org.example.lesson2.practice.Palindrome.checkPalindrome;
@@ -106,6 +107,13 @@ public class Main {
          */
         int[] ar2 = {1, 2, 3, 4, 5,1};
         System.out.println("Содержание дубликатов: " + containsDuplicate(ar));
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * Метод который считает факториал числа
+         */
+        System.out.println("Factorial: " + methodFactorial(5));
 
     }
 }
