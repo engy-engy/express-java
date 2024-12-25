@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.example.lesson2.homework.AdditionSubtraction.additionSubtraction;
+import static org.example.lesson2.homework.ChangeVariableValue.changeVariableValue;
 import static org.example.lesson2.homework.ConvertCelsiusToFahrenheit.convertCelsiusToFahrenheit;
 import static org.example.lesson2.homework.RemainderDivision.remainderDivision;
 import static org.example.lesson2.homework.SRectangle.sRectangle;
@@ -147,6 +148,13 @@ public class Main {
          * Формула: F = C * 9/5 + 32.
          */
         System.out.println("Температура по Fahrenheit: " + convertCelsiusToFahrenheit(25));
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App, которая меняет значения двух переменных местами без использования третьей переменной.
+         */
+        changeVariableValue(2,4);
 
     }
 }
