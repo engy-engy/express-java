@@ -9,6 +9,7 @@ import java.util.List;
 
 import static org.example.lesson2.practice.BubbleSort.sortArray;
 import static org.example.lesson2.practice.Calculator.*;
+import static org.example.lesson2.practice.ContainsDuplicate.containsDuplicate;
 import static org.example.lesson2.practice.DivisibleBy3Or5.divide3Or5;
 import static org.example.lesson2.practice.EvenOdd.dividedEvenOrOdd;
 import static org.example.lesson2.practice.Factorial.factorial;
@@ -97,7 +98,14 @@ public class Main {
          * Например, для массива {1, -2, 3, 4, -1, 2, 1, -5, 4} максимальная сумма подмассива будет равна 6 (для подмассива {3, 4, -1, 2, 1}).
          */
         int[] ar = {1, -2, 3, 4, -1, 2, 1, -5, 4};
-        System.out.println(maxSubarraySum(ar));
+        System.out.println("Максимальная сумма всех чисел подмассива: " + maxSubarraySum(ar));
+        System.out.println("--------------------------------------------------------------------------------");
+
+        /**
+         * App, которая проверяет, содержатся ли дубликаты в массиве. Если дубликаты найдены, верните true, если нет — false.
+         */
+        int[] ar2 = {1, 2, 3, 4, 5,1};
+        System.out.println("Содержание дубликатов: " + containsDuplicate(ar));
 
     }
 }
