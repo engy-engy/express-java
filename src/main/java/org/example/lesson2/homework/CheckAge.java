@@ -1,5 +1,7 @@
 package org.example.lesson2.homework;
 
+import java.util.Scanner;
+
 /**
  *  App, которая определяет категорию человека по возрасту:
  * 0-12: Ребёнок
@@ -10,7 +12,13 @@ package org.example.lesson2.homework;
  */
 public class CheckAge {
 
-    public static void checkAge(int age) {
+    public static void checkAge() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите возраст");
+
+        int age = sc.nextInt();
+
         if (age <= 12 && age >= 0) {
             System.out.println("Ребенок");
         } else if (age <= 17 && age >= 13) {
