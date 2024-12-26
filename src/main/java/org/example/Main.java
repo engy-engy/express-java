@@ -10,6 +10,7 @@ import java.util.List;
 import static org.example.lesson2.homework.AdditionSubtraction.additionSubtraction;
 import static org.example.lesson2.homework.CalculatorSwitch.calculatorSwitch;
 import static org.example.lesson2.homework.ChangeVariableValue.changeVariableValue;
+import static org.example.lesson2.homework.CheckAge.checkAge;
 import static org.example.lesson2.homework.CheckEvenNumber.checkEvenNumber;
 import static org.example.lesson2.homework.ConvertCelsiusToFahrenheit.convertCelsiusToFahrenheit;
 import static org.example.lesson2.homework.RemainderDivision.remainderDivision;
@@ -179,6 +180,13 @@ public class Main {
          * App, пользователь вводит номер месяца (1-12). Выведите название соответствующего времени года, используя switch.
          */
         timeOfYearSwitch();
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         *  App, которая определяет категорию человека по возрасту:
+         */
+        checkAge(64);
 
     }
 }
