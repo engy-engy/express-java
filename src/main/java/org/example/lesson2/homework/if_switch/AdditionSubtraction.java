@@ -1,6 +1,4 @@
-package org.example.lesson2.homework;
-
-import java.util.Scanner;
+package org.example.lesson2.homework.if_switch;
 
 /**
  * App, которая принимает два числа с консоли, складывает их и выводит разность.

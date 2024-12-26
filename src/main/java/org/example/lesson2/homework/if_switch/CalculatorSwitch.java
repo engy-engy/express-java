@@ -1,4 +1,4 @@
-package org.example.lesson2.homework;
+package org.example.lesson2.homework.if_switch;
 
 import java.util.Scanner;
 

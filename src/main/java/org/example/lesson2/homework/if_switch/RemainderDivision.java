@@ -1,4 +1,4 @@
-package org.example.lesson2.homework;
+package org.example.lesson2.homework.if_switch;
 
 /**
  * App, которая принимает два числа и выводит результат их деления и остаток от деления.

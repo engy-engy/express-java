@@ -1,4 +1,4 @@
-package org.example.lesson2.homework;
+package org.example.lesson2.homework.if_switch;
 
 /**
  * App, которая меняет значения двух переменных местами без использования третьей переменной.
