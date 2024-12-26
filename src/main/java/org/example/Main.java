@@ -11,6 +11,7 @@ import static org.example.lesson2.homework.AdditionSubtraction.additionSubtracti
 import static org.example.lesson2.homework.CalculatorSwitch.calculatorSwitch;
 import static org.example.lesson2.homework.ChangeVariableValue.changeVariableValue;
 import static org.example.lesson2.homework.CheckAge.checkAge;
+import static org.example.lesson2.homework.CheckDivision.checkDivision;
 import static org.example.lesson2.homework.CheckEvenNumber.checkEvenNumber;
 import static org.example.lesson2.homework.ConvertCelsiusToFahrenheit.convertCelsiusToFahrenheit;
 import static org.example.lesson2.homework.RemainderDivision.remainderDivision;
@@ -180,7 +181,6 @@ public class Main {
          * App, пользователь вводит номер месяца (1-12). Выведите название соответствующего времени года, используя switch.
          */
         timeOfYearSwitch();
-        System.out.println("--------------------------------------------------------------------------------");
 
 
         /**
@@ -188,5 +188,13 @@ public class Main {
          */
         checkAge();
 
+        System.out.println("--------------------------------------------------------------------------------");
+
+
+        /**
+         * App, которая проверяет, делится ли число на 3 и 5 одновременно.
+         */
+        checkDivision();
+        System.out.println("--------------------------------------------------------------------------------");
     }
 }
