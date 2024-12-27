@@ -16,6 +16,7 @@ import java.util.HashSet;
 public class BankAccount {
 
     private String accountNumber;
+
     private double balance;
 
     public BankAccount(String accountNumber, double balance) {
@@ -32,7 +33,7 @@ public class BankAccount {
     }
 
     public double getBalance() {
-        return this.balance;
+        return balance;
     }
 
 }

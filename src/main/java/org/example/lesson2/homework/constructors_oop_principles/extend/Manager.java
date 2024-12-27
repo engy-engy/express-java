@@ -1,4 +1,4 @@
-package org.example.lesson2.homework.constructors_oop_principles;
+package org.example.lesson2.homework.constructors_oop_principles.extend;
 
 /**
  * Наследование - Класс "Сотрудник" и "Менеджер"
