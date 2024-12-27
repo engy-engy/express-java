@@ -15,6 +15,5 @@ package org.example.lesson2.homework.constructors_oop_principles.polymorphism_sh
 public abstract class Shape {
 
     public abstract double getArea();
-
     public abstract double getPerimeter();
 }
