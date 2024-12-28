@@ -1,7 +1,5 @@
 package org.example.lesson3.practice.task_2;
 
-import java.util.Objects;
-
 /**
  * Задача: Создание класса Person
  * Описание:
