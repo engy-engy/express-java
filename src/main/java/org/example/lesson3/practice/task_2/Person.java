@@ -54,7 +54,9 @@ public class Person {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age > 0){
+            this.age = age;
+        }
     }
 
     @Override
@@ -64,23 +66,18 @@ public class Person {
 
     @Override
     public int hashCode() {
-        int result = 17;
-        result = 31 * result + firstName.hashCode();
-        result = 31 * result + lastName.hashCode();
-        result = 31 * result + age;
-        return result;
-        // return Objects.hash(firstName, lastName, age);
+        return 31 * firstName.hashCode() * lastName.hashCode() * age;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()){
-            return false;
-        }
+
+        if (this == obj) return true;
+
+        if (obj == null || getClass() != obj.getClass()) return false;
+
         Person person = (Person) obj;
+
         return firstName.equals(person.firstName) &&
                 lastName.equals(person.lastName) &&
                 age == person.age;
