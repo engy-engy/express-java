@@ -11,6 +11,7 @@ public class ElectricCar extends Transport implements Refuelable {
 
     @Override
     public String refuel(double count) {
+        batteryLevel += count;
         return String.format("Заряжено на %.2f %%" , count);
     }
 
