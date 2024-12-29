@@ -1,13 +1,12 @@
 package org.example.lesson3.homework.task_2;
 
-import java.util.HashSet;
-
 /**
  * BankAccount, который будет представлять банковский счет.
  */
 public class BankAccount {
 
     private String accountNumber;
+
     private double balance;
 
     public BankAccount(String accountNumber, double balance) {
