@@ -6,7 +6,6 @@ package org.example.lesson3.homework.task_1;
 public class Rectangle {
 
     private int width;
-
     private int height;
 
     public Rectangle(int width, int height) {
@@ -20,6 +19,12 @@ public class Rectangle {
 
     public int calculatePerimeter() {
         return 2 * width + height;
+    }
+
+    public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle(4, 5);
+        System.out.println("Площадь: " + rectangle.calculateArea());
+        System.out.println("Периметр: " + rectangle.calculatePerimeter());
     }
 
 }

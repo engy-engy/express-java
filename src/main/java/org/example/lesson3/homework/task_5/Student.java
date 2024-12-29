@@ -31,7 +31,7 @@ public class Student implements Cloneable{
 
     @Override
     public String toString() {
-        return String.format("Student{id=%d, name='%s', gpa=%.2f}", id, name, gpa);
+        return String.format("Student: id=%d | name='%s' | gpa=%.2f", id, name, gpa);
     }
 
     @Override
@@ -44,8 +44,18 @@ public class Student implements Cloneable{
         try {
             return (Student) super.clone();
         } catch (CloneNotSupportedException e) {
-            throw new  RuntimeException("Ошибка при клонировании объекта", e);
+            return new Student(this.name, this.id, this.gpa);
         }
+    }
+
+    public static void main(String[] args) {
+        Student student1 = new Student("Alex", 101, 4.8);
+        System.out.println(student1);
+        Student studentAnnaClone = (Student) student1.clone();
+        System.out.println(studentAnnaClone);
+        System.out.println(student1.equals(studentAnnaClone));
+        Student student2 = new Student("Maria", 101, 2.0);
+        System.out.println(student1.equals(student2));
     }
 
 }

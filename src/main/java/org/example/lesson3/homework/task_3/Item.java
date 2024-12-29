@@ -27,4 +27,20 @@ public class Item {
     public String getInfo() {
         return String.format("Name: %s%nPrice: %.2f%nQuantity: %d", name, price, quantity);
     }
+
+    @Override
+    public String toString() {
+        return String.format("Item: name=%s | price=%.2f | quantity=%d", name, price, quantity);
+    }
+
+    public static void main(String[] args) {
+        Item item = new Item("Apple", 1.5, 10);
+        System.out.println(item);
+        item.sell(5);
+        System.out.println(item);
+        item.restock(24);
+        System.out.println(item);
+        System.out.println(item.getInfo());
+    }
+
 }
