@@ -1,5 +1,8 @@
 package org.example.lesson3.homework.task_4;
 
+import org.example.lesson3.homework.task_4.enums.City;
+import org.example.lesson3.homework.task_4.enums.Gender;
+
 import java.util.Objects;
 
 /**
@@ -9,8 +12,8 @@ public class Person {
 
     private String name;
     private int age;
-    private String gender;
-    private String city;
+    private Gender gender;
+    private City city;
 
     public Person(String name) {
         this.name = name;
@@ -21,9 +24,11 @@ public class Person {
         this.age = age;
     }
 
-    public Person(String name, int age, String gender, String city) {
+    public Person(String name, int age, Gender gender, City city) {
         this.name = name;
         this.age = age;
+        this.gender = gender;
+        this.city = city;
     }
 
     @Override
@@ -49,6 +54,11 @@ public class Person {
         return 31 * name.hashCode() * age;
     }
 
+    @Override
+    public String toString() {
+        return String.format("Person: name=%s | Age=%d | Gender=%s | City=%s", name, age, gender, city);
+    }
+
     public String getName() {
         return name;
     }
@@ -65,19 +75,29 @@ public class Person {
         this.age = age;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
-    public String getCity() {
+    public City getCity() {
         return city;
     }
 
-    public void setCity(String city) {
+    public void setCity(City city) {
         this.city = city;
+    }
+
+    public static void main(String[] args) {
+        Person ivan1 = new Person("Ivan", 25, Gender.MAN, City.NEW_YORK);
+        Person ivan2 = new Person("Ivan", 25);
+        ivan2.setGender(Gender.UNKNOWN);
+        ivan2.setCity(City.UNKNOWN);
+        System.out.println(ivan1);
+        System.out.println(ivan2);
+        System.out.println(ivan1.equals(ivan2));
     }
 }
