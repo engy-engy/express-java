@@ -46,8 +46,10 @@ public class Product implements Cloneable{
 
     public static void main(String[] args) {
         Product product = new Product(1,"orange", 10.1);
-        Product product2 = product.clone();
+        Product productClone = product.clone();
         System.out.println(product);
-        System.out.println(product2);
+        System.out.println(productClone);
+        System.out.println(product.equals(productClone));
     }
+
 }
