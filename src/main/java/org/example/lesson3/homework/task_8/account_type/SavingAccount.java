@@ -14,7 +14,7 @@ public class SavingAccount extends BankAccount {
 
     @Override
     public void calculateInterest() {
-        setBalance(this.getBalance() * 0.05);
+        setBalance(getBalance() + getBalance() * 0.05);
     }
 
     @Override

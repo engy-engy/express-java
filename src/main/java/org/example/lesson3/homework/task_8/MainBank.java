@@ -7,19 +7,21 @@ import java.util.List;
 
 public class MainBank {
     public static void main(String[] args) {
-        CheckingAccount checkingAccount = new CheckingAccount(100100002001L, 1000);
-        SavingAccount savingsAccount = new SavingAccount(100100002002L, 1000);
 
-        List<BankAccount> accounts = List.of(checkingAccount, savingsAccount);
+        CheckingAccount checkingAccount = new CheckingAccount(123L, 100);
+        SavingAccount savingAccount = new SavingAccount(124L, 100);
 
-        System.out.println("Initial state:");
-        System.out.println(accounts);
-        for (BankAccount account : accounts) {
+        List<BankAccount> bankAccounts = List.of(checkingAccount, savingAccount);
+
+        System.out.println("------------------");
+        System.out.println(bankAccounts);
+        for (BankAccount account : bankAccounts) {
             account.deposit(500);
             account.withdraw(200);
             account.calculateInterest();
         }
-        System.out.println("After a year:");
-        System.out.println(accounts);
+        System.out.println("------------------");
+        System.out.println(bankAccounts);
+        System.out.println("------------------");
     }
 }
