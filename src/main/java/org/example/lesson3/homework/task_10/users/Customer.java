@@ -5,7 +5,7 @@ import org.example.lesson3.homework.task_10.products.Product;
 import java.util.ArrayList;
 
 /**
- * Customer class, подкласс описывающий метод добавления товара в корзину
+ * Customer class, подкласс описывающий метод добавления товара в корзину и получения товаров в корзине
  */
 public class Customer extends User {
 

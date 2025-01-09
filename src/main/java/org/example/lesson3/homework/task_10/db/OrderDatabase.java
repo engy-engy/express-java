@@ -1,7 +1,7 @@
 package org.example.lesson3.homework.task_10.db;
+
 import org.example.lesson3.homework.task_10.orders.Order;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
@@ -10,7 +10,11 @@ import java.util.NoSuchElementException;
  */
 public class OrderDatabase implements DatabaseOperations {
 
-    private Map<String, Order> orders = new HashMap<>();
+    private Map<String, Order> orders;
+
+    public OrderDatabase(Map<String, Order> storage) {
+        this.orders = storage;
+    }
 
     @Override
     public void saveOrder(Order order) {
@@ -22,7 +26,7 @@ public class OrderDatabase implements DatabaseOperations {
     public Order getOrder(String orderId) {
         Order order = orders.get(orderId);
         if (order == null) {
-            throw new NoSuchElementException("Order not found!");
+            throw new NoSuchElementException(String.format("Order with ID '%s' not found!", orderId));
         }
         return order;
     }

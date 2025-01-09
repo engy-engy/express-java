@@ -8,6 +8,8 @@ import org.example.lesson3.homework.task_10.products.Product;
 import org.example.lesson3.homework.task_10.users.Admin;
 import org.example.lesson3.homework.task_10.users.Customer;
 
+import java.util.HashMap;
+
 public class MainMarket {
     public static void main(String[] args) {
         Customer customer = new Customer("test1", "Малевич Андрей", "adrey1@bk.ru");
@@ -27,12 +29,12 @@ public class MainMarket {
         customer.addProduct(iphone);
         customer.addProduct(jeans);
 
-        Order order = new Order("orderId001", customer);
+        Order order = new Order("orderId001", customer, customer.getCart());
         order.calculateTotalPrice();
         System.out.println("Total order price = " + order.getTotalPrice());
 
 
-        OrderDatabase db = new OrderDatabase();
+        OrderDatabase db = new OrderDatabase(new HashMap<>());
         db.saveOrder(order);
 
         Order retrievedOrder = db.getOrder(order.getOrderId());
