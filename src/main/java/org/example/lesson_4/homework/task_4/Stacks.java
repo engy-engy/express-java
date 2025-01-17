@@ -14,6 +14,16 @@ import java.util.Stack;
  */
 public class Stacks {
 
+//        Схема работы isValidSequence()
+//        Строка: "([]{})"
+//        Шаги:
+//        1. Встретили '(': кладем в стек -> Стек: (
+//        2. Встретили '[': кладем в стек -> Стек: ( [
+//        3. Встретили '{': кладем в стек -> Стек: ( [ {
+//        4. Встретили '}': извлекаем '{', проверяем пару -> OK -> Стек: ( [
+//        5. Встретили ']': извлекаем '[', проверяем пару -> OK -> Стек: (
+//        6. Встретили ')': извлекаем '(', проверяем пару -> OK -> Стек: пуст
+
     public static boolean isValidSequence(String s) {
         // Инициализация стека. Стек будет использоваться для хранения открывающих скобок.
         Stack<Character> stack = new Stack<>();
@@ -50,29 +60,39 @@ public class Stacks {
                 (open == '{' && close == '}');
     }
 
+    public static boolean isValidSequence2(String s) {
+
+        Stack<Character> stack = new Stack<>();
+
+        for (char ch : s.toCharArray()) {
+            if (ch == '(' || ch == '[' || ch == '{') {
+                stack.push(ch);
+                // Если текущий элемент = закрывающаяся скобка
+                // И стек не пустой
+                // И элемент на вершине стека открывающаяся скобка
+            } else if (ch == ')' && !stack.isEmpty() && stack.peek() == '(') {
+                // То удалить верхний элемент стека
+                stack.pop();
+            } else if (ch == ']' && !stack.isEmpty() && stack.peek() == '[') {
+                stack.pop();
+            } else if (ch == '}' && !stack.isEmpty() && stack.peek() == '{') {
+                stack.pop();
+            } else { return false; } // Последовательность False
+        }
+        // Если все проверки (Удаление элементов по условию) прошли успешно, то последовательность True
+        return true;
+    }
+
     public static void main(String[] args) {
         String input1 = "([]{})"; // Правильная последовательность
         String input2 = "([)]";   // Неправильная последовательность
         String input3 = "({[()]})"; // Правильная последовательность
         String input4 = "((({{{[[[]]]}}})))"; // Правильная последовательность
 
-        System.out.println(isValidSequence(input1)); // true
-        System.out.println(isValidSequence(input2)); // false
-        System.out.println(isValidSequence(input3)); // true
-        System.out.println(isValidSequence(input4)); // true
-
-
-
-//        Схема работы:
-//        Строка: "([]{})"
-//        Шаги:
-//        1. Встретили '(': кладем в стек -> Стек: (
-//        2. Встретили '[': кладем в стек -> Стек: ( [
-//        3. Встретили '{': кладем в стек -> Стек: ( [ {
-//        4. Встретили '}': извлекаем '{', проверяем пару -> OK -> Стек: ( [
-//        5. Встретили ']': извлекаем '[', проверяем пару -> OK -> Стек: (
-//        6. Встретили ')': извлекаем '(', проверяем пару -> OK -> Стек: пуст
-
+        System.out.println(isValidSequence2(input1)); // true
+        System.out.println(isValidSequence2(input2)); // false
+        System.out.println(isValidSequence2(input3)); // true
+        System.out.println(isValidSequence2(input4)); // true
 
     }
 }
