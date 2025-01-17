@@ -1,10 +1,9 @@
 package org.example.lesson_4.homework.task_1;
-import java.util.Arrays;
 
 /**
  * метод, который принимает массив целых чисел и возвращает сумму всех элементов массива.
  */
-public class ArraysStructure {
+public class Arrays {
 
     public static int sumArrays(int[] array) {
         if (array == null || array.length == 0) {
@@ -28,7 +27,7 @@ public class ArraysStructure {
         // Используется stream API из библиотеки java.util.Arrays.
         // Метод Arrays.stream(array) создаёт поток элементов массива,
         // а sum() подсчитывает их сумму.
-        return Arrays.stream(array).sum();
+        return java.util.Arrays.stream(array).sum();
     }
 
     public static void main(String[] args) {
