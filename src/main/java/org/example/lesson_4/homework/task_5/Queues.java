@@ -62,11 +62,13 @@ public class Queues {
 
         // Ротация вправо
         for (int i = 0; i < rotations; i++) {
+            // Добавляем в начало очереди последний элемент
             queue.addFirst(Objects.requireNonNull(queue.pollLast()));
         }
 
         int[] rotatedArray = new int[array.length];
         for (int i = 0; i < rotatedArray.length; i++) {
+            // Запись элементов очереди в массив, начиная с начала очереди
             rotatedArray[i] = Objects.requireNonNull(queue.pollFirst());
         }
 
@@ -76,7 +78,7 @@ public class Queues {
     public static void main(String[] args) {
 
         int[] array = {1, 2, 3, 4, 5};
-        int n = 4;
+        int n = 2;
 
         // Ротация массива
         int[] rotatedArray = rotateRight(array, n);
