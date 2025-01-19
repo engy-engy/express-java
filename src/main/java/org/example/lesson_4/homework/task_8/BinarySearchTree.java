@@ -106,6 +106,11 @@ public class BinarySearchTree {
     }
 
     private void inorderRecursive(TreeNode node) {
+//        Обход дерева “in-order” предполагает:
+//        1.	Сначала обходим левое поддерево узла.
+//        2.	Затем обрабатываем (печатаем или выполняем действие с) значение текущего узла.
+//        3.	После этого обходим правое поддерево.
+
         if (node != null) {
             inorderRecursive(node.getLeft());
             System.out.print(node.getVal() + " ");
