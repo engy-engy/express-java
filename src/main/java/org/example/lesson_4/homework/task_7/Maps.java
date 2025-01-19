@@ -13,8 +13,6 @@ public class Maps {
 //    HashMap - хеш-таблица. Произвольный порядок элементов, быстрый доступ к элементам get, put, remove
 //    LinkedHashMap - основан на hashmap но сохраняет порядок добавления элементов. Менее производительный чем hashmap.
 //    TreeMap - основан на кросно-черном дереве. Сортирует ключи по естественному порядку или по заданному компаратору.
-//    Hashtable - схож с hashmap, но синхрониирован медленее. Устаревший.
-
 
     public static Map<String, Integer> countChars(String s) {
         if (s == null || s.isEmpty()) {return new HashMap<>();}

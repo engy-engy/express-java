@@ -39,14 +39,14 @@ public class Queues {
 //    peekFirst()	Возвращает первый элемент без удаления. Возвращает null, если очередь пуста.
 //    peekLast()	Возвращает последний элемент без удаления. Возвращает null, если очередь пуста.
 
+//    Deque двусторонняя очередь, очередь с двумя концами.
+
 //    Реализация	Двусторонняя очередь	Поддержка списка	Сортировка элементов
 //    ArrayDeque	        Да              	    Нет 	            Нет
 //    LinkedList	        Да                  	Да              	Нет
 //    PriorityQueue   	    Нет	                    Нет             	Да
 
 
-//    Deque двусторонняя очередь, очередь с двумя концами.
-//    Реализация через ArrayDeque и LinkedList
     public static int[] rotateRight(int[] array, int n) {
 
         if (array == null || array.length == 0 || n < 0) return array;
