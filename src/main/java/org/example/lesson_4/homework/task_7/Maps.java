@@ -35,11 +35,11 @@ public class Maps {
 
         Map<Character, Integer> map = new HashMap<>();
 
-        for (char c : s.toCharArray()) {
-          if (map.containsKey(c)) {
-              map.put(c, map.get(c) + 1);
+        for (char ch : s.toCharArray()) {
+          if (map.containsKey(ch)) {
+              map.put(ch, map.get(ch) + 1);
           } else {
-              map.put(c, 1);
+              map.put(ch, 1);
           }
         }
         return map;

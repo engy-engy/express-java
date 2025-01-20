@@ -28,7 +28,7 @@ public class PriorityQueues {
 //          }
 //      });
 
-        for (int el : array) {
+        for (Integer el : array) {
             queue.add(el);
         }
 
