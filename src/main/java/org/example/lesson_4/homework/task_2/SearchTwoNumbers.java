@@ -25,7 +25,6 @@ public class SearchTwoNumbers {
 
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        //searchTwoNumbers(arr1, 5);
         searchTwoNumbers2(arr1, 6);
     }
 }
