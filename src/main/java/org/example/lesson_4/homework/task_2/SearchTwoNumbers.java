@@ -1,6 +1,5 @@
 package org.example.lesson_4.homework.task_2;
 
-import java.util.HashMap;
 import java.util.HashSet;
 
 /**
