@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_4;
+package org.example.lesson_4.practice.task_4;
 
 import java.util.Stack;
 

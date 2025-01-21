@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_6;
+package org.example.lesson_4.practice.task_6;
 
 import java.util.HashSet;
 import java.util.Set;

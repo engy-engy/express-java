@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_7;
+package org.example.lesson_4.practice.task_7;
 
 import java.util.HashMap;
 import java.util.Map;

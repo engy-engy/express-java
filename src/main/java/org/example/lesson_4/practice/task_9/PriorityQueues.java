@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_9;
+package org.example.lesson_4.practice.task_9;
 
 import java.util.Arrays;
 import java.util.Comparator;

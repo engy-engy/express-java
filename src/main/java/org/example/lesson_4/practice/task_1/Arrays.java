@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_1;
+package org.example.lesson_4.practice.task_1;
 
 /**
  * метод, который принимает массив целых чисел и возвращает сумму всех элементов массива.

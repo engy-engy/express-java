@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_8;
+package org.example.lesson_4.practice.task_8;
 
 /**
  * Узел дерева. Каждый узел содержит ссылки на левого и правого потомка

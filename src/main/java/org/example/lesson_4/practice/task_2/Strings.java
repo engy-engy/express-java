@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_2;
+package org.example.lesson_4.practice.task_2;
 
 /**
  * функция, которая принимает строку и возвращает её в обратном порядке.

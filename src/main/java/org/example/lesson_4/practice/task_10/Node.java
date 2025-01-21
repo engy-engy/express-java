@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_10;
+package org.example.lesson_4.practice.task_10;
 
 public class Node {
     private int value;

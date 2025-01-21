@@ -1,4 +1,4 @@
-package org.example.lesson_4.homework.task_8;
+package org.example.lesson_4.practice.task_8;
 
 /**
  * Корневой узел дерева и методы для работы с деревом.
