@@ -10,6 +10,13 @@ import java.util.Map;
  */
 public class SearchUnique {
 
+//    LinkedHashMap — это оптимальный выбор. Обоснование:
+//    1. Сохранение порядка: LinkedHashMap сохраняет порядок добавления ключей, что важно для поиска первого уникального символа.
+//	  2. Подсчёт частоты: Используя LinkedHashMap, легко подсчитать количество появлений каждого символа.
+//	  3. Оптимальная сложность:
+//        Вставка и поиск выполняются за амортизированное O(1).
+//        Проверка первого уникального символа выполняется за O(n).
+
     public static Character searchUnique(String string) {
         if (string == null || string.isEmpty()) return null;
 
