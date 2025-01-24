@@ -1,8 +1,8 @@
-package org.example.lesson_5.practice.lesson_task;
+package org.example.lesson_5.practice.lesson_task_1;
 
-import org.example.lesson_5.practice.lesson_task.discount.DiscountEmployeeStrategy;
-import org.example.lesson_5.practice.lesson_task.discount.DiscountRegularStrategy;
-import org.example.lesson_5.practice.lesson_task.discount.DiscountVipStrategy;
+import org.example.lesson_5.practice.lesson_task_1.strategy.DiscountEmployeeStrategy;
+import org.example.lesson_5.practice.lesson_task_1.strategy.DiscountRegularStrategy;
+import org.example.lesson_5.practice.lesson_task_1.strategy.DiscountVipStrategy;
 
 public class DiscountStrategyHandler {
 

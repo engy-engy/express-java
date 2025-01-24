@@ -1,6 +1,6 @@
-package org.example.lesson_5.practice.lesson_task.discount;
+package org.example.lesson_5.practice.lesson_task_1.strategy;
 
-import org.example.lesson_5.practice.lesson_task.DiscountStrategy;
+import org.example.lesson_5.practice.lesson_task_1.DiscountStrategy;
 
 public class DiscountEmployeeStrategy implements DiscountStrategy {
     @Override
