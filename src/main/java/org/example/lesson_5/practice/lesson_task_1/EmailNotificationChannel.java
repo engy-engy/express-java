@@ -1,4 +1,4 @@
-package org.example.lesson_5.practice.lesson_task_2.channels;
+package org.example.lesson_5.practice.lesson_task_1;
 
 public class EmailNotificationChannel extends NotificationChannel {
 

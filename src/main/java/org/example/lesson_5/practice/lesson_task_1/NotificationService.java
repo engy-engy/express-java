@@ -1,8 +1,4 @@
-package org.example.lesson_5.practice.lesson_task_2;
-
-import org.example.lesson_5.practice.lesson_task_2.channels.EmailNotificationChannel;
-import org.example.lesson_5.practice.lesson_task_2.channels.NotificationChannel;
-import org.example.lesson_5.practice.lesson_task_2.channels.SmsNotificationChannel;
+package org.example.lesson_5.practice.lesson_task_1;
 
 import java.util.ArrayList;
 

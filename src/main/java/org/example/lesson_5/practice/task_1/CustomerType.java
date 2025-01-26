@@ -1,4 +1,4 @@
-package org.example.lesson_5.practice.lesson_task_1;
+package org.example.lesson_5.practice.task_1;
 
 public enum CustomerType {
     REGULAR,
