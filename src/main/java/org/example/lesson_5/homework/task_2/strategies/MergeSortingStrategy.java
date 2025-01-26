@@ -1,4 +1,4 @@
-package org.example.lesson_5.practice.task_2.strategies;
+package org.example.lesson_5.homework.task_2.strategies;
 
 import java.util.Arrays;
 

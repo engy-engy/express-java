@@ -1,4 +1,4 @@
-package org.example.lesson_5.practice.task_1.strategy;
+package org.example.lesson_5.homework.task_1.strategy;
 
 public class DiscountEmployeeStrategy implements DiscountStrategy {
     @Override

@@ -1,10 +1,10 @@
-package org.example.lesson_5.practice.task_2;
+package org.example.lesson_5.homework.task_2;
 
 
-import org.example.lesson_5.practice.task_2.strategies.BubbleSortingStrategy;
-import org.example.lesson_5.practice.task_2.strategies.MergeSortingStrategy;
-import org.example.lesson_5.practice.task_2.strategies.QuickSortingStrategy;
-import org.example.lesson_5.practice.task_2.strategies.SortingStrategy;
+import org.example.lesson_5.homework.task_2.strategies.BubbleSortingStrategy;
+import org.example.lesson_5.homework.task_2.strategies.MergeSortingStrategy;
+import org.example.lesson_5.homework.task_2.strategies.QuickSortingStrategy;
+import org.example.lesson_5.homework.task_2.strategies.SortingStrategy;
 
 public class SortingStrategyHandler {
     public static SortingStrategy getStrategy(SortType sortType) {

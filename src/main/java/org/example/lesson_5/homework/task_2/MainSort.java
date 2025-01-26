@@ -1,8 +1,8 @@
-package org.example.lesson_5.practice.task_2;
+package org.example.lesson_5.homework.task_2;
 
-import org.example.lesson_5.practice.task_2.strategies.SortingStrategy;
+import org.example.lesson_5.homework.task_2.strategies.SortingStrategy;
 
-import static org.example.lesson_5.practice.task_2.SortType.*;
+import static org.example.lesson_5.homework.task_2.SortType.*;
 
 public class MainSort {
 //  Старая реализация
