@@ -1,6 +1,6 @@
 package org.example.lesson_5.practice.task_2;
 
-import org.example.lesson_5.practice.task_2.strategy.SortStrategy;
+import org.example.lesson_5.practice.task_2.strategies.SortingStrategy;
 
 import static org.example.lesson_5.practice.task_2.SortType.*;
 
@@ -27,9 +27,9 @@ public class MainSort {
 
         int[] a = {1,2,3,4,5,6,7,8,9,10};
 
-        SortStrategy bubbleStrategy = SortStrategyHandler.getStrategy(BUBBLE);
-        SortStrategy mergeStrategy = SortStrategyHandler.getStrategy(MERGE);
-        SortStrategy quickStrategy = SortStrategyHandler.getStrategy(QUICK);
+        SortingStrategy bubbleStrategy = SortingStrategyHandler.getStrategy(BUBBLE);
+        SortingStrategy mergeStrategy = SortingStrategyHandler.getStrategy(MERGE);
+        SortingStrategy quickStrategy = SortingStrategyHandler.getStrategy(QUICK);
 
         bubbleStrategy.sort(a);
         mergeStrategy.sort(a);

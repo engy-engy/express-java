@@ -1,8 +1,8 @@
-package org.example.lesson_5.practice.task_2.strategy;
+package org.example.lesson_5.practice.task_2.strategies;
 
 import java.util.Arrays;
 
-public class SortBubbleStrategy implements SortStrategy {
+public class BubbleSortingStrategy implements SortingStrategy {
     @Override
     public void sort(int[] array) {
         System.out.println("Sorting using bubble sort " + Arrays.toString(array));
