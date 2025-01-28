@@ -9,8 +9,6 @@ public class Main {
 
         BankApp bankApp = new BankApp(List.of(corporate, personal));
 
-        bankApp.switchActiveAccountTo(corporate);
-
         bankApp.showBalance();
         bankApp.transferTo(personal,100);
         bankApp.switchActiveAccountTo(personal);
