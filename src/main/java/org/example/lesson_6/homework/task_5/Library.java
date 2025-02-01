@@ -18,23 +18,18 @@ public class Library {
     }
 
     public void switchActiveBook(String name) {
-        Book newBook = this.books.get(name);
-
-        if (newBook == null) {
+        if (this.books.get(name) == null) {
             System.out.println("Error: Book \"" + name + "\" not found in the library.");
             return;
         }
-
-        if (newBook.equals(this.activeBook)) {
+        if (this.books.get(name).equals(this.activeBook)) {
             System.out.println("Error: Book \"" + name + "\" is already active.");
             return;
         }
-
         if (activeBook != null) {
-            newBook.setCurrentPage(activeBook.getCurrentPage());
+            this.books.get(name).setCurrentPage(activeBook.getCurrentPage());
         }
-
-        activeBook = newBook;
+        activeBook = this.books.get(name);
         System.out.println("Switched to book: " + activeBook.getName());
     }
 
