@@ -18,20 +18,20 @@ public class Library {
     }
 
     public void switchActiveBook(String name) {
-        if (!books.containsKey(name)) {
+        Book newBook = this.books.get(name);
+
+        if (newBook == null) {
             System.out.println("Error: Book \"" + name + "\" not found in the library.");
             return;
         }
 
-        Book newBook = books.get(name);
-
-        if (activeBook != null && activeBook.equals(newBook)) {
+        if (newBook.equals(this.activeBook)) {
             System.out.println("Error: Book \"" + name + "\" is already active.");
             return;
         }
 
         if (activeBook != null) {
-            newBook.setCurrentPage(activeBook.getCurrentPage()); // Сохранение текущей страницы
+            newBook.setCurrentPage(activeBook.getCurrentPage());
         }
 
         activeBook = newBook;
@@ -70,5 +70,9 @@ public class Library {
         library.readActiveBook();
         library.readActiveBook();
         library.showActiveBookInfo();
+
+        library.switchActiveBook("book3");
+        library.switchActiveBook("book2");
+
     }
 }
